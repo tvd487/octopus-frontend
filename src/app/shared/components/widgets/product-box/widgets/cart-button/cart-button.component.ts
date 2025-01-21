@@ -31,7 +31,7 @@ export class CartButtonComponent {
 
   @Select(CartState.cartItems) cartItem$: Observable<Cart[]>;
 
-  @ViewChild("productDetailModal") productDetailModal: ProductDetailsModalComponent;
+  // @ViewChild("productDetailModal") productDetailModal: ProductDetailsModalComponent;
 
   public cartItem: Cart | null;
   public currentDate: number | null;

@@ -45,11 +45,11 @@ export class AppComponent {
 
     config.max = 5;
     config.readonly = true;
-    this.store.dispatch(new GetCountries());
-    this.store.dispatch(new GetStates());
+    // this.store.dispatch(new GetCountries());
+    // this.store.dispatch(new GetStates());
     this.store.dispatch(new GetCartItems());
     this.store.dispatch(new GetCompare());
-     this.store.dispatch(new GetCurrencies({ status: 1 }));
+     // this.store.dispatch(new GetCurrencies({ status: 1 }));
     this.store.dispatch(new GetThemes());
 
     this.store.dispatch(new GetSettingOption());
@@ -63,7 +63,7 @@ export class AppComponent {
     })
 
     this.themeOption$.subscribe(theme => {
-      this.meta.updateTag({ name: 'title', content: theme?.seo?.meta_title || 'sdsff'});
+      this.meta.updateTag({ name: 'title', content: theme?.seo?.meta_title || ''});
       this.meta.updateTag({ name: 'description', content: theme?.seo?.meta_description });
       // Set Mode
       if(theme?.general?.mode === 'dark') {

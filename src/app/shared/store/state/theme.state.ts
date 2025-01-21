@@ -72,7 +72,7 @@ export class ThemeState{
     return this.themeService.getThemes().pipe(
       tap({
         next: (result) => {
-          var activeTheme: string = '';
+          let activeTheme: string = '';
           result.data?.map(theme => {
             if(theme.status === 1) { activeTheme = theme.slug}
           })
