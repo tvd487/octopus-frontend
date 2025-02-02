@@ -1,16 +1,16 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
-import { Select } from '@ngxs/store';
-import { Observable } from 'rxjs';
+import {CommonModule} from '@angular/common';
+import {Component, Input} from '@angular/core';
+import {CarouselModule, OwlOptions} from 'ngx-owl-carousel-o';
+import {Select} from '@ngxs/store';
+import {Observable} from 'rxjs';
 
-import { ProductBoxComponent } from '../../../../shared/components/widgets/product-box/product-box.component';
+import {ProductBoxComponent} from '../../../../shared/components/widgets/product-box/product-box.component';
 
-import { Product } from '../../../../shared/interface/product.interface';
-import { ProductService } from '../../../../shared/services/product.service';
-import { ProductState } from '../../../../shared/store/state/product.state';
-import { NoDataComponent } from '../../../../shared/components/widgets/no-data/no-data.component';
-import { horizontalProductSlider, productSlider } from '../../../../shared/data/owl-carousel';
+import {Product} from '../../../../shared/interface/product.interface';
+import {ProductService} from '../../../../shared/services/product.service';
+import {ProductState} from '../../../../shared/store/state/product.state';
+import {NoDataComponent} from '../../../../shared/components/widgets/no-data/no-data.component';
+import {horizontalProductSlider, productSlider} from '../../../../shared/data/owl-carousel';
 
 
 @Component({

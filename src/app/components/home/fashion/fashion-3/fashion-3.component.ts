@@ -55,7 +55,8 @@ export class Fashion3Component {
       },
     },
   };
-  private platformId: boolean;
+
+  private readonly platformId: boolean;
 
   constructor(
     private store: Store,
@@ -100,7 +101,7 @@ export class Fashion3Component {
       if(this.platformId){
         document.body.classList.add('skeleton-body');
         document.body.classList.add('box-layout-body');
-  
+
         forkJoin([getProduct$, getCategory$, getBrands$]).subscribe({
           complete: () => {
             document.body.classList.remove('skeleton-body');

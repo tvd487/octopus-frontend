@@ -8,7 +8,6 @@ import { CurrencySymbolPipe } from '../../../../pipe/currency.pipe';
 import { ProductCartButtonComponent } from '../widgets/product-cart-button/product-cart-button.component';
 import { ProductHoverActionComponent } from '../widgets/product-hover-action/product-hover-action.component';
 import { VariantAttributesComponent } from '../../variant-attributes/variant-attributes.component';
-// import { ProductContentComponent } from '../../../../../components/shop/product/product-details/widgets/product-content/product-content.component';
 import { DisplayVariantAttributesComponent } from '../../display-variant-attributes/display-variant-attributes.component';
 import { ProductBoxVariantAttributesComponent } from '../widgets/product-box-variant-attributes/product-box-variant-attributes.component';
 import { CartButtonComponent } from '../widgets/cart-button/cart-button.component';

@@ -18,7 +18,7 @@ import { MenuService } from '../../../services/menu.service';
   selector: 'app-header-one',
   standalone: true,
   imports: [CommonModule, RouterModule,HeaderLogoComponent,TopBarComponent,
-            MenuComponent, SettingsComponent, CartComponent,
+            MenuComponent, CartComponent,
             SearchComponent, UserProfileComponent],
   templateUrl: './header-one.component.html',
   styleUrl: './header-one.component.scss'
