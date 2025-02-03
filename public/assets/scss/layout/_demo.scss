@@ -548,66 +548,6 @@ header {
   }
 }
 
-/* Flower Demo css */
-.flower-bg {
-  background-image: url(/assets/images/flower/flower-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-}
-
-.bg-block {
-  background-image: url(/assets/images/flower/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  padding: 70px 50px 60px 50px;
-
-  .title4 {
-    .line {
-      margin-bottom: 25px;
-    }
-  }
-
-  .theme-tab {
-    .tab-title {
-      margin-bottom: 30px;
-    }
-  }
-}
-
-/* Nursery Demo css */
-.layout-20 {
-  background-image: url(/assets/images/nursery/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 50px;
-
-  header.sticky {
-    height: auto;
-    left: 50px;
-
-    @media (max-width: 991px) {
-      width: calc(100% - 40px);
-      left: 20px;
-    }
-
-    @media (max-width: 576px) {
-      width: 100%;
-      left: 0;
-    }
-  }
-
-  @media (max-width: 991px) {
-    padding: 20px;
-  }
-}
-
 .card-white-bg {
   .theme-card {
     background-color: white;
@@ -634,27 +574,6 @@ header {
 
 .effect-cls {
   position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-    background: url(../../images/game/top.png);
-    top: -1px;
-    width: 100%;
-    height: 85px;
-    z-index: 1;
-    background-repeat: no-repeat;
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    background: url("../../images/game/back.png");
-    bottom: -12px;
-    width: 100%;
-    height: 110px;
-    z-index: 1;
-  }
 
   &.footer-effect {
     &:before {
