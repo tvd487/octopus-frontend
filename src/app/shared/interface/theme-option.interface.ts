@@ -23,7 +23,6 @@ export interface Option {
    blog: Blog;
    product: ProductThemeOption;
    collection: Collection;
-   seller: Seller;
    about_us: AboutUs;
    contact_us: Contact;
    error_page: ErrorPage;
@@ -124,16 +123,6 @@ export interface Blog {
    read_more_enable: number | boolean;
 }
 
-export interface Seller {
-   about: About;
-   services: Services;
-   steps: Steps;
-   start_selling: Step;
-   store_layout: string;
-   store_details: string;
-   store_image_url: string;
-}
-
 export interface AboutUs {
    about: AboutSection;
    team: Team;
@@ -152,7 +141,7 @@ export interface AboutFutures {
    icon: string;
    title: string;
    description: string;
-} 
+}
 
 export interface About {
    status: boolean;

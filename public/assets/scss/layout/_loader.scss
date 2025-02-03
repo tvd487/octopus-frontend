@@ -839,54 +839,6 @@
   }
 }
 
-.skeleton-seller {
-  .vendor-text {
-    width: 66px;
-    height: 66px;
-    border-radius: 0;
-    background: linear-gradient(90deg, rgba(212, 212, 212, 0.41) 8%, #cdcdcd 18%, rgba(212, 212, 212, 0.41) 33%);
-    background-size: 800px 104px;
-    animation: skeleton-loader 2s ease-in-out infinite;
-  }
-
-  .contain-name {
-    h3 {
-      background: linear-gradient(90deg, rgba(212, 212, 212, 0.41) 8%, #cdcdcd 18%, rgba(212, 212, 212, 0.41) 33%);
-      background-size: 800px 104px;
-      animation: skeleton-loader 2s ease-in-out infinite;
-      border-radius: 0;
-      width: 50%;
-      height: 28px;
-    }
-
-    .product-label {
-      background: linear-gradient(90deg, rgba(212, 212, 212, 0.41) 8%, #cdcdcd 18%, rgba(212, 212, 212, 0.41) 33%);
-      background-size: 800px 104px;
-      animation: skeleton-loader 2s ease-in-out infinite;
-      border-radius: 0;
-      width: 20%;
-      height: 28px;
-
-      &:after {
-        display: none;
-      }
-    }
-  }
-
-  .seller-contact {
-    background: linear-gradient(90deg, rgba(212, 212, 212, 0.41) 8%, #cdcdcd 18%, rgba(212, 212, 212, 0.41) 33%);
-    background-size: 800px 104px;
-    animation: skeleton-loader 2s ease-in-out infinite;
-    border-radius: 0;
-    width: 50% !important;
-    height: 28px;
-
-    &.mt-2 {
-      width: 60% !important;
-    }
-  }
-}
-
 .blog-skeleton {
   .blog-image {
     background-color: #f8f8f8;

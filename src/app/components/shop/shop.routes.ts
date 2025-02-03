@@ -3,16 +3,12 @@ import { AuthGuard } from "../../core/guard/auth.guard";
 import { CheckoutGuard } from "../../core/guard/checkout.guard";
 import { BrandResolver } from "../../shared/resolver/brand.resolver";
 import { ProductResolver } from "../../shared/resolver/product.resolver";
-import { StoreResolver } from "../../shared/resolver/store.resolver";
 import { BrandComponent } from "./brand/brand.component";
 import { CartComponent } from "./cart/cart.component";
 import { CheckoutComponent } from "./checkout/checkout.component";
 import { CollectionComponent } from "./collection/collection.component";
 import { CompareComponent } from "./compare/compare.component";
 import { ProductComponent } from "./product/product.component";
-import { SellerDetailsComponent } from "./seller/seller-details/seller-details.component";
-import { SellerStoreComponent } from "./seller/seller-store/seller-store.component";
-import { SellerComponent } from "./seller/seller.component";
 import { WishlistComponent } from "./wishlist/wishlist.component";
 import { CategoryComponent } from "./category/category.component";
 import { CategoryResolver } from "../../shared/resolver/category.resolver";
@@ -49,21 +45,6 @@ export const shop: Routes = [
     path: 'checkout',
     component: CheckoutComponent,
     canActivate: [CheckoutGuard]
-  },
-  {
-    path: 'seller/become-seller',
-    component: SellerComponent
-  },
-  {
-    path: 'seller/stores',
-    component: SellerStoreComponent
-  },
-  {
-    path: 'seller/store/:slug',
-    component: SellerDetailsComponent,
-    resolve: {
-      data: StoreResolver
-    }
   },
   {
     path: 'order/tracking',
